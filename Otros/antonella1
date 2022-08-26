@@ -1,0 +1,99 @@
+doble x = 2*x
+f x y = x * x + y * y 
+g x y z = x + y + z * z
+ 
+ 
+suma x y = x + y  
+normaVectorial x1 x2 = sqrt (x1**2 + x2**2)      --funcion distancia
+funcionConstante8 x = 8
+ 
+ 
+f1 n | n == 0 = 1
+      | otherwise = 0
+     
+maximo x y | x >= y = x          --maximo entre dos numeros
+            | otherwise = y
+            
+           
+     
+
+f4 n | n == 0 = 1
+     | n /= 0 = 2
+    
+    
+    
+cantidadDeSoluciones b c | b ** 2 - 4 * c > 0 = 2 
+                         | b ** 2 - 4 * c == 0 = 1 
+                         | otherwise = 0
+                         
+                         
+                         
+doble :: Int -> Int
+suma :: Float -> Float -> Float 
+triple x = 3 * x
+
+
+maximo2 :: Int -> Int -> Int
+maximo2 x y | x >= y = x
+           | otherwise = y
+           
+           
+           
+funcionRara :: Float -> Float -> Bool -> Bool        --Tambien se puede hacer con pattern matching
+funcionRara x y z = ( x >= y ) || z
+
+
+absoluto :: Int -> Int
+absoluto x | x >= 0 = x
+           | x <= 0 = -x
+           
+         
+maximoabsoluto :: Int -> Int -> Int
+maximoabsoluto x y | x >= y = x
+                   | otherwise = y 
+                        
+          
+                         
+maximo3 :: Int -> Int -> Int -> Int
+maximo3 x y z | x > y && x > z = x
+              | y > x && y > z = y 
+              | otherwise = z
+              
+              
+algunoEsO :: Float -> Float -> Bool
+algunoEsO x y | x == 0 = True
+              | y == 0 = True
+              | otherwise = False 
+              
+              
+              
+
+              
+         
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
