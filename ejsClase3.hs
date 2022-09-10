@@ -61,39 +61,12 @@ sumDig n | n >= 0 && n < 10 = digitoUnit(n)
             
             
 digIguales :: Int -> Bool 
-digIguales n | mod n 10 == 0 = False 
+digIguales n | n < 10 && n >= 0 = True
+             | n < 0 = digIguales(-n)
+             | mod n 10 == 0 = False
              | (d == 1) && div n 100 == 0 = True  
              | (d == 1) && div n 100 /= 0 = digIguales(div n 10)
              | otherwise = False
             where d = div (digitoDec n) (digitoUnit n) 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-      
 
+           
