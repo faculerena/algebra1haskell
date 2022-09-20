@@ -19,10 +19,14 @@ sum3 q n = sum2 q (2 * n)
 sum4 :: Int -> Int -> Int
 sum4 q n = sum2 q (2 * n) - sum2 q (n - 1) 
 
+
+
 factorial :: Integer -> Integer
 factorial n | n == 0 = 1 
             | n == 1 = 1
             | n > 1 = n * factorial (n-1)
+            | n < 0 = 0    
+
 
 eAprox :: Integer -> Double
 eAprox n | n == 0 = 1 
