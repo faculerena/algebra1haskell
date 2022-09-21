@@ -26,13 +26,7 @@ a ese dia le sumo la cantidad de dias y me voy para atras los dias extras por se
 
 
 queDiaFue :: Int -> Int -> Int -> String                 -- queria que me devuelva texto, averiguar como sacar las "" de la rta
-queDiaFue d m a | queDiaNum d m a == 0 = "Domingo"
-                | queDiaNum d m a == 1 = "Lunes" 
-                | queDiaNum d m a == 2 = "Martes" 
-                | queDiaNum d m a == 3 = "Miercoles" 
-                | queDiaNum d m a == 4 = "Jueves" 
-                | queDiaNum d m a == 5 = "Viernes" 
-                | queDiaNum d m a == 6 = "Sabado" 
+queDiaFue d m a = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"] !! queDiaNum d m a 
 
 
 
