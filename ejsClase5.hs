@@ -63,8 +63,8 @@ esFactorial n i | n == factorial i = True
                 | otherwise = esFactorial n (i + 1)
 -}
 menorFactDesdeI :: Int -> Int -> Int
-menorFactDesdeI n k | n > fac k  = fac (k + 1)
-                    | n <= fac k = 
+menorFactDesdeI n k | n > fac k  = menorFactDesdeI n (k + 1)
+                    | n <= fac k = fac k 
                     
 
 
