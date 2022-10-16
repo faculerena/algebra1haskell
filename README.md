@@ -4,12 +4,17 @@
 
 No me hago responsable si estan mal hago lo mejor que puedo, revisenlo y cualquier cosa creen un issue o lo que sea si me olvido de actualizar!
 
-Actualizado hasta clase 6.
+Actualizado hasta clase 7.
 
 
 # Gitkraken les facilita la vida. 
 
+Las instrucciones siguen siendo válidas, pero si usan gitkraken, el paso 1, 3 y 4 se pueden hacer desde la configuracion de Kraken y realmente es *mucho* mejor para las cosas básicas (y no tan basicas) y el paso 2 no es necesario.
 
+La seccion de subir los archivos pasa a ser "Stage all changes" y escribir el commit en GitKraken
+
+
+Si necesitan una cuenta "Pro" de GitKraken, pedir a la facultad un certificado de alumno regular y enviarlo a GitHub para conseguir una "Cuenta de Estudiante"
 
 ## Como subir un archivo a GitHub - Preparacion:
 
