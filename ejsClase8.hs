@@ -40,14 +40,27 @@ insertarEn [] e i = [e]
 insertarEn (x:xs) e i | i == 1 = e : x : xs  
                       | otherwise  = x : insertarEn xs e (i - 1)
 
-permutaciones :: a -> Set [a]
+permutaciones :: Int -> Set [Int]
 permutaciones 0 = [[]]
-permutaciones n = insertarATodosEnTodosLados permutaciones (n-1) n 
+permutaciones n = insertarATodosEnTodosLados n (permutaciones (n-1)) 
 
 
-insertarATodosEnTodosLados :: Set [a] -> a -> Set [a]
-insertarATodosEnTodosLados [] _ = 
-insertarATodosEnTodosLados (ps:pss) n = insertarEnTodosLados ps n ++ insertarAtodosEnTodosLados pss n
+insertarATodosEnTodosLados :: Int -> Set [Int] -> Set [Int]
+insertarATodosEnTodosLados _ [] = []
+insertarATodosEnTodosLados n ([]:pss) = [n]:(insertarATodosEnTodosLados n pss)
+insertarATodosEnTodosLados n (ps:pss) = (insertarEnTodosLados n ps n) ++ (insertarATodosEnTodosLados n pss)
+
+
+insertarEnTodosLados :: Int -> [Int] -> Int -> Set [Int]
+insertarEnTodosLados n ps i | i == 0 = []
+                            | otherwise = (insertarEn ps n i) : (insertarEnTodosLados n ps (i - 1))
+
+
+
+
+
+
+
 
 
 
