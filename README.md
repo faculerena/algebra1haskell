@@ -4,8 +4,8 @@
 
 No me hago responsable si estan mal hago lo mejor que puedo, revisenlo y cualquier cosa creen un issue o lo que sea si me olvido de actualizar!
 
-Actualizado hasta clase 7.
-
+Actualizado hasta clase 10.
+A final del cuatrimestre subo los TPS hechos.
 
 # Gitkraken les facilita la vida. 
 
@@ -57,7 +57,7 @@ Esto va a generar unos archivos, entre los cuales esta su clave publica (id_rsa.
 
 Abran id_rsa.pub (click derecho, abrir con - algun editor de texto-) 
 Van a la pagina: https://github.com/settings/keys
-Agregan una clave SSH y le dan permisos de read y write. Por favor, ponganle un nombre que se acuerden por las dudas que despues hagan más. Por referencia, la mia se llama algo del estilo PC_Casa_Fedora.
+Agregan una clave SSH y le dan permisos de read y write. Por favor, ponganle un nombre que se acuerden por las dudas que despues hagan más. Por referencia, la mia se llama algo del estilo PC_Casa.
 
 Si les pide una Passphrase en algun momento, es como un apodo para toda esa clave publica que es mucho texto, pongan una palabra como si fuese una contraseña, no se la olviden.
 
@@ -100,4 +100,4 @@ Ahora ponen git commit, que basicamente es comentar su subida. Agreguen entre la
 git push origin main
 ```
 
-Este comando es para subir los archivos, como es un repositorio basico y no hay mucho quilombo, solamente necesitamos subirlo a la rama principal (y única).
+Este comando es para subir los archivos, como es un repositorio basico y no hay mucho quilombo, solamente necesitamos subirlo a la rama principal (y única, si es el caso).
